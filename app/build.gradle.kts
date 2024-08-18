@@ -18,6 +18,7 @@ val currentFlavor get() = gradle.startParameter.taskRequests.toString().let { ta
 android {
     val javaVersion = JavaVersion.VERSION_1_8
     compileSdkVersion(30)
+    ndkVersion = "21.0.6113669"
     compileOptions {
         sourceCompatibility = javaVersion
         targetCompatibility = javaVersion
